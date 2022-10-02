@@ -1,0 +1,43 @@
+.Cabecera {
+    background-color: rgb(172, 95, 235);
+    border-radius: 18px;
+    text-align: center;
+
+}
+
+.formulario {
+    position: absolute;
+    left: 50%;
+    width: 300px;
+    padding: 5px;
+    border-radius: 10px;
+    border-style: solid;
+    background-color: rgb(252, 219, 88);
+    text-align: right;
+    margin-left: -150px;
+}
+
+.formulario h2 {
+    text-align: center;
+}
+
+.formulario form {
+    background-color: rgb(231, 231, 231);
+    padding: 10px;
+    border-style: solid;
+    border-color: gray;
+}
+
+input {
+    padding: 0px;
+    margin-top: 5px;
+}
+
+select#sexo {
+    margin-top: 5px;
+}
+
+.formulario form #submit {
+    width: 110px;
+    margin-right: 80px;
+} 

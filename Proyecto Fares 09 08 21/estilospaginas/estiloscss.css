@@ -1,0 +1,201 @@
+/* aplicar formato al encabezado */
+
+body header {
+    background-color: #007580; /*Permite cambiar color de fondo */
+    text-align: center; /* Permite cambiar la alineación del texto */
+    color: #fed049;
+    text-shadow: 3px 2px #1b1717;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: xx-large;
+    margin: 0px;
+}
+
+.descripcion {
+    width: 900px;
+    background-color: #7eca9c;
+    text-align: justify;
+    font-size: 30px;
+    border-top-right-radius: 58px;
+    border-top-left-radius: 58px;
+    border-bottom-left-radius: 58px;
+    border-bottom-right-radius: 58px;
+    padding-top: 1em;
+    padding-right: 1em;
+    padding-bottom: 1em;
+    padding-left: 1em;
+    display: inline-block;
+    border-style: solid;
+    border-color: #53221c;
+    box-shadow: 12px 12px 0px 3px #007580;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+
+.menu {
+    color: #630000;
+    margin-bottom: 5px;
+    padding-bottom: 3px;
+    padding-top: 3px;
+    padding-right: 3px;
+    padding-left: 3px;
+    background-color: #f4d160;
+    text-align: center;
+    position: relative;
+}
+
+.menu ul {
+    background-color: #94ebcd;
+    margin: 0;
+    padding: 0;
+    border: 1px solid #433520;
+    overflow: hidden;
+    list-style-type: none;
+}
+
+.menu ul li {
+    float: left;
+    width: 100px;
+}
+
+.menu ul li:hover {
+    background-color: #ffcb91;
+}
+
+ul li a {
+    border-left: 1px solid #FFFFFF;
+    border-right: 1px solid #7C7C7C;
+    text-shadow: 0px 0px #333333;
+    padding: .3em;
+    display: block;
+    text-decoration: none;
+}
+
+ul li a:hover {
+    color: #F8070C;
+}
+
+h2 {
+    color: #04360E;
+    font-family: calibri;
+    font-size: 30px;
+    text-shadow: 1px 1px 1px #FDF3F3;
+}
+
+.contact_form {
+    width: 600px;
+    border-style: solid;
+    border-radius: 21px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    -webkit-transform: translate(-50%, 0%);
+}
+
+/*-estilos para los ul y li del formulario-*/
+.contact_form ul {
+    width: 500px;
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+    .contact form li {
+        padding: 12px;
+        border-bottom:1px solid #eee;
+        position: relative;
+    }
+    
+    .contact_form label {
+        color: #555555;
+        display:inline-block;
+        font-family: calibri;
+        font-size: 18px;
+        font-weight: bold;
+        margin-top: 10px;
+        padding: 3px;
+        width:90px;
+        margin-left: 10px;
+    }
+    
+    .contact_form input {
+        height: 20px;
+        width: 220px;
+        padding: 5px 8px;
+        margin-top: 10px;
+    }
+    
+    .contact_form textarea {
+        padding: 8px;
+        width: 300px;
+        margin-top: 10px;
+    }
+
+    .contact_form button {
+        margin-left: 90px;
+    }
+    
+    /*-- estilos visuales de los elementos -- */
+    .contact_form input, .contact_form textarea {
+        border:1px solid taaa;
+        box-shadow: 0px 0px 3px #ccc, 0 10px 15px #eee inset;
+        border-radius:2px;
+        color:#888;
+        font-size: 12px;
+        padding-right: 30px;
+        -moz-transition: padding .25s;
+        -webkit-transition: padding .25s;
+        -o-transition: padding .25s;
+        transition: padding .25s;
+    }
+    
+    
+    .contact_form input:focus, .contact_form textarea:focus {
+        background: #fff;
+        border: 1px solid #555;
+        box-shadow:0 0 3px #aaa;
+        padding-right: 80px;
+    }
+    
+    /* === Estilos de Validación === */
+    .contact_form input:required:valid, .contact_form textarea:required:valid {
+        box-shadow:0 0 5px #5cd053;
+        border-color: #28921f;
+    }
+    
+    .contact_form input focus:invalid, .contact_form textarea:focus:invalid {
+        box-shadow:0 0 5px #d45252;
+        border-color: #003535;
+    }
+    
+    /* === Estilos del botón Enviar === */
+    button.submit {
+        padding: 9px 17px;
+        font-family: Helvetica,calibri, Arial, sans-serif;
+        font-weight: bold;
+        line-height: 1;
+        color: #444;
+        border: none;
+        text-shadow: 0 1px 1px rgba(255, 255, 255,0.85);
+        background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#fff), to(#bbb));
+        background-image: -moz-linear-gradient(0% 100% 90deg, #BBBBBB, #FFFFFF);
+        background-color: #fff;
+        border: 1px solid #f1f1f1;
+        border-radius: 10px;
+        box-shadow: 0 1px 2px rgba(0,0,0,0.5);
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-left: 105px;
+    }
+    
+    button.submit:hover {
+        opacity: 55;
+        cursor: pointer;
+        color: #035CFC;
+    }
+
+    button.submit:active {
+        border: 1px solid #222;
+        box-shadow: 0 0 10px 5px #444 inset;
+    }
+    

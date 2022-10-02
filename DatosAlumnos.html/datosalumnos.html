@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="datosalumnos.css">
+    <title>Ediciones Fares</title>
+</head>
+    <body>
+        <header class= "Cabecera"> 
+            <h1>Ediciones Fares</h1>
+        </header>
+        <section class="formulario">
+            <h2>Ingresar Estudiantes</h2>
+
+            <!--Inicio de Formulario con encabezado -->
+            <form action="agregardatosalumnos.php" method="POST">
+                 <!--Solicitar codigo -->
+                <label for="codigo">Código: <span class="required">*</span></label>
+                <input type="text" id="codigo" name="codigo" placeholder="Su código"> <br>
+
+                 <!--Solicitar nombre -->
+                <label for="nombre">Nombre: <span class="required">*</span></label>
+                <input type="text" id="nombre" name="nombre" placeholder="Su nombre"> <br>
+
+                 <!--Solicitar dirección -->
+                <label for="direccion">Dirección: <span class="required">*</span></label>
+                <input type="text" id="direccion" name="direccion" placeholder="Su dirección"> <br>
+
+                 <!--Solicitar telefono -->
+                <label for="telefono">Teléfono: <span class="required">*</span></label>
+                <input type="text" id="telefono" name="telefono" placeholder="Su teléfono"> <br>
+
+                 <!--Solicitar sexo -->
+                <label for="sexo">Sexo: <span class="required">*</span></label>
+                <select name="sexo" id="sexo">
+                    <option value="H">Hombre</option>
+                    <option value="M">Mujer</option>
+                </select> <br>
+
+                 <!--Solicitar observaciones -->
+                <label for="observaciones">Observaciones: <span class="required">*</span></label>
+                <input type="text" id="observaciones" name="observaciones" placeholder="Observaciones"> <br>
+
+                <input type="submit" value="Guardar Datos" id="submit">
+            </form>
+        </section>
+    </body>
+    <!-- Elias Isaac Gavarrete Escobar -->
+</html>

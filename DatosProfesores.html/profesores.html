@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="profesores.css">
+    <title>Ediciones Fares</title>
+</head>
+    <body>
+        <header class= "Cabecera"> 
+            <h1>Ediciones Fares</h1>
+        </header>
+        <section class="formulario">
+            <h2>Ingresar Profesores</h2>
+
+            <!--Inicio de Formulario con encabezado -->
+            <form action="agregarprofesores.php" method="POST">
+                <fieldset> <legend>Datos Personales</legend>
+                    <!--Solicitar identidad -->
+                    <label for="identidad">Identidad: <span class="required">*</span></label>
+                    <input type="text" id="identidad" name="identidad" placeholder="Su Identidad"> <br>
+
+                    <!--Solicitar nombre -->
+                    <label for="nombre">Nombre: <span class="required">*</span></label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Su nombre"> <br>
+
+                    <!--Solicitar dirección -->
+                    <label for="direccion">Dirección: <span class="required">*</span></label>
+                    <textarea name="direccion" id="direccion" cols="25" rows="3" placeholder="Dirección"></textarea> <br>
+
+                    <!--Solicitar telefono -->
+                    <label for="telefono">Teléfono: <span class="required">*</span></label>
+                    <input type="text" id="telefono" name="telefono" placeholder="Su teléfono"> <br>
+                </fieldset>
+
+                <fieldset> <legend>Datos Personales</legend>
+                    <center>
+                    <!--Solicitar sexo -->
+                        <label><input type="radio" name="sexo" id="sexo_0" value="H" checked="checked">Hombre</label> 
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <label><input type="radio" name="sexo" id="sexo_1" value="M">Mujer</label> 
+                    </center>
+                </fieldset>
+
+                <fieldset> <legend>Otros Datos</legend>
+                    <!--Solicitar estado -->
+                    <label for="estado">Estado: <span class="required">*</span></label>
+                    <select name="estado" id="estado">
+                        <option value="activo">Activo</option>
+                        <option value="inactivo">Inactivo</option>
+                    </select> <br>
+
+                     <!--Solicitar observaciones -->
+                     <label for="observaciones">Observaciones: <span class="required">*</span></label>
+                    <textarea name="observaciones" id="observaciones" cols="25" rows="3" placeholder="Observaciones"></textarea> <br>
+                </fieldset>
+
+                <input type="submit" value="Guardar Datos" id="submit">
+            </form>
+        </section>
+    </body>
+    <!-- Elias Isaac Gavarrete Escobar -->
+</html>
